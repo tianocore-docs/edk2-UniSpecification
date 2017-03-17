@@ -29,6 +29,6 @@
 
 -->
 
-# 4 Redacted {#4-redacted}
+# 4 Redacted
 
 Formerly "Meta-Data UNI Files". This chapter intentionally removed.

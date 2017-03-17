@@ -29,13 +29,13 @@
 
 -->
 
-# 1 Introduction {#1-introduction}
+# 1 Introduction
 
 This document describes file format for Unicode string files. This file format
 supports multiple layouts and formats in the Unicode file. This versatility
 allows strings to be grouped either by language or by string identifier.
 
-## 1.1 Related Information {#1-1-related-information}
+## 1.1 Related Information
 
 The following publications and sources of information may be useful to you or
 are referred to by this specification:
@@ -61,16 +61,16 @@ are referred to by this specification:
 * _EDK II Module Surface Area Specification_, Version 0.51, Intel, 2006,
   https://edk2.tianocore.org/source/browse/edk2/trunk/docs
 
-* _EDK II Module Development Environment Library Specification_, Version 0.58, 
+* _EDK II Module Development Environment Library Specification_, Version 0.58,
   Intel, 2006, https://edk2.tianocore.org/servlets/ProjectDocumentList?folderID=82&H expandFolder=82&folderID=0.H
 
-* _EDK II Platform Configuration Database Infrastructure Description_, 
+* _EDK II Platform Configuration Database Infrastructure Description_,
   Version 0.54, Intel, 2006, https://edk2.tianocore.org/source/browse/edk2/trunk/docs
 
-* _EDK II C Coding Standards Specification_, Version 0.51, Intel, 2006, 
+* _EDK II C Coding Standards Specification_, Version 0.51, Intel, 2006,
   https://edk2.tianocore.org/source/browse/edk2/trunk/docs
 
-## 1.2 Terms {#1-2-terms}
+## 1.2 Terms
 
 The following terms are used throughout this document to describe varying
 aspects of input localization:
@@ -92,7 +92,7 @@ the defined module types.
 **DXE SAL**
 
 Framework Driver Execution Environment phase. A special class of DXE module that
-produces SAL Runtime Services. DXE SAL modules differ from DXE Runtime modules 
+produces SAL Runtime Services. DXE SAL modules differ from DXE Runtime modules
 in that the DXE Runtime modules support Virtual mode OS calls at OS runtime and
 DXE SAL modules support intermixing Virtual or Physical mode OS calls.
 
@@ -168,7 +168,7 @@ module types supported by this package, see module type.
 All libraries and components belong to one of the following module types:
 `BASE`, `SEC`, `PEI_CORE`, `PEIM`, `DXE_CORE`, `DXE_DRIVER`,
 `DXE_RUNTIME_DRIVER`, `DXE_SMM_DRIVER`, `DXE_SAL_DRIVER`, `UEFI_DRIVER`, or
-`UEFI_APPLICATION`. These definitions provide a framework that is consistent 
+`UEFI_APPLICATION`. These definitions provide a framework that is consistent
 with a similar set of requirements. A module that is of module type `BASE`,
 depends only on headers and libraries provided in the MDE, while a module
 that is of module type `DXE_DRIVER` depends on common DXE components. For a
@@ -254,11 +254,11 @@ organization.
 A non-profit collaborative trade organization formed to promote and manage the
 UEFI standard. For more information, see http://www.uefi.org
 
-## 1.3 Conventions used in this document {#1-3-conventions-used-in-this-document}
+## 1.3 Conventions used in this document
 
 This document uses the typographic and illustrative conventions described below.
 
-### 1.3.1 Pseudo-code conventions {#1-3-1-pseudo-code-conventions}
+### 1.3.1 Pseudo-code conventions
 
 Pseudo code is presented to describe algorithms in a more concise form. None of
 the algorithms in this document are intended to be compiled directly. The code
@@ -273,7 +273,7 @@ appropriate. The coding style, particularly the indentation style, is used for
 readability and does not necessarily comply with an implementation of the
 Extensible Firmware Interface Specification.
 
-### 1.3.2 Typographic conventions {#1-3-2-typographic-conventions}
+### 1.3.2 Typographic conventions
 
 This document uses the typographic and illustrative conventions described below:
 

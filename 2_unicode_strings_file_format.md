@@ -29,7 +29,7 @@
 
 -->
 
-# 2 Unicode Strings File Format {#2-unicode-strings-file-format}
+# 2 Unicode Strings File Format
 
 EDK II Unicode files are used for mapping token names to localized strings that
 are identified by an RFC4646 language code. The format for storing EDK II
@@ -51,7 +51,7 @@ All the files must begin with a Unicode BOM character.
 that can be stored in a UTF-16LE file.
 **********
 
-## 2.1 Common EBNF {#2-1-common-ebnf}
+## 2.1 Common EBNF
 
 The following EBNF uses quoted (double quotes) encapsulated characters to
 represent UCS-2 string literals. In the following definitions, the semi-colon
@@ -86,11 +86,11 @@ is used to denote a comment.
 <UDblQuote>    ::= \u0022  ; Double Quote Character, "
 <String>       ::= <UDblQuote> <SContent>* <UDblQuote>
 <SContent>     ::= {<PChars>} {<Attributes>}
-<Attributes>   ::= "\" {"narrow"} {"wide"} {<UDblQuote>} 
+<Attributes>   ::= "\" {"narrow"} {"wide"} {<UDblQuote>}
                    {"n"} {"r"} {"t"} {"nbr"} {"\"} {"'"}
 ```
 
-### 2.1.1 Definitions {#2-1-1-definitions}
+### 2.1.1 Definitions
 
 **_LanguageCodes_**
 
@@ -100,8 +100,8 @@ The language code must be a valid RFC4646 language code.
 
 In order to include some standard characters, such as the "\" back-slash
 character within a string, the character must be prefixed with the escape
-character.  Characters that may require a prefixed escape character include 
-the following, back slash "\" character, single-quote "'" character, 
+character.  Characters that may require a prefixed escape character include
+the following, back slash "\" character, single-quote "'" character,
 double-quote '"' character and the forward slash "/" character. The back slash
 always requires the escape character.
 

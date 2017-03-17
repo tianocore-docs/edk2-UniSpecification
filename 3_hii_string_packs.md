@@ -29,13 +29,13 @@
 
 -->
 
-# 3 HII String Packs {#3-hii-string-packs}
+# 3 HII String Packs
 
 Unicode files used for creating HII String Packs have the following format:
 
 ```c
 <StringFileFormat> ::= <CommentLine>*
-                       <LanguageDefs> 
+                       <LanguageDefs>
                        <Content>+
 ```
 
@@ -51,7 +51,7 @@ generating HII String Packs.
 
 Additional Definitions used for Unicode files used to create HII String Packs.
 
-```c              
+```c
 <LanguageDefs>    ::= <CtrlChar> "langdef" <MS> <LangCode> <MS>
                       <LangDesc> <EOL>
 <LangDesc>        ::= <UDblQuote> <Chars> <UDblQuote>
@@ -71,7 +71,7 @@ only type of Unicode file that allows for refactoring the control character
 (providing backward compatibility), `<CtrlChar>`.
 **********
 
-## 3.1 Example file: {#3-1-example-file}
+## 3.1 Example file
 
 ```c
 //

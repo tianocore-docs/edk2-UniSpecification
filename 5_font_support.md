@@ -29,7 +29,7 @@
 
 -->
 
-# 5 Font Support {#5-font-support}
+# 5 Font Support
 
 This chapter defines the optional attributes and entries in EDK II Unicode
 files to support font selection.
@@ -63,7 +63,7 @@ font size or a different font style by using the `\f` escape sequences
 described below. These escape characters extend those described in the _EDK2
 Build Specification_.
 
-###### Table 1 .uni File Font Escape Characters{#table-1-uni-file-font-escape-characters}
+###### Table 1 .uni File Font Escape Characters
 
 | Font Control Character | Description                                                                                                       |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -86,7 +86,7 @@ Build Specification_.
 
 Font identifiers are created by using the `#fontdef`.
 
-## 5.1 #font {#5-1-font}
+## 5.1 #font
 
 Set the default font to use with all subsequent `#strings`.
 
@@ -100,7 +100,7 @@ Set the default font to use with all subsequent `#strings`.
 
 C style identifier associated with the font.
 
-## 5.2 #fontdef {#5-2-fontdef}
+## 5.2 #fontdef
 
 Associated a font identifier with a specific font family, size and style.
 
@@ -141,7 +141,7 @@ style, separated by a "|". If "normal" is used, then it may not be combined
 with any other font style. If there is no font style specified, then "normal"
 is assumed.
 
-## 5.3 #string Extensions {#5-3-string-extensions}
+## 5.3 #string Extensions
 
 The EDK II build command is responsible for parsing the .uni files specified
 in INF files' `[Sources]` sections. The tool uses python objects to convert the
