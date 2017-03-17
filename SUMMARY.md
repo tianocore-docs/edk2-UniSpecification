@@ -32,20 +32,20 @@
 # Summary
 
 * [EDK II Multi-String .UNI File Format Specification](README.md)
-* [1 Introduction](1_introduction.md)
+* [1 Introduction](1_introduction.md#1-introduction)
   * [1.1 Related Information](1_introduction.md#11-related-information)
   * [1.2 Terms](1_introduction.md#12-terms)
   * [1.3 Conventions used in this document](1_introduction.md#13-conventions-used-in-this-document)
-* [2 Unicode Strings File Format](2_unicode_strings_file_format.md)
+* [2 Unicode Strings File Format](2_unicode_strings_file_format.md#2-unicode-strings-file-format)
   * [2.1 Common EBNF](2_unicode_strings_file_format.md#21-common-ebnf)
-* [3 HII String Packs](3_hii_string_packs.md)
+* [3 HII String Packs](3_hii_string_packs.md#3-hii-string-packs)
   * [3.1 Example file](3_hii_string_packs.md#31-example-file)
-* [4 Redacted](4_redacted.md)
-* [5 Font Support](5_font_support.md)
+* [4 Redacted](4_redacted.md#4-redacted)
+* [5 Font Support](5_font_support.md#5-font-support)
   * [5.1 #font](5_font_support.md#51-font)
   * [5.2 #fontdef](5_font_support.md#52-fontdef)
   * [5.3 #string Extensions](5_font_support.md#53-string-extensions)
 
-### Tables
-
-* [Table 1 .uni File Font Escape Characters](5_font_support.md#table-1-uni-file-font-escape-characters)
+---
+* Tables
+  * [Table 1 .uni File Font Escape Characters](5_font_support.md#table-1-uni-file-font-escape-characters)
