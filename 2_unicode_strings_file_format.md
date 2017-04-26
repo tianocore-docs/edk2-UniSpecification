@@ -33,7 +33,8 @@
 
 EDK II Unicode files are used for mapping token names to localized strings that
 are identified by an RFC4646 language code. The format for storing EDK II
-Unicode files is UTF-16LE. The character content must be UCS-2.
+Unicode files on disk is UTF-8 (without a BOM character) or UTF-16LE (with a BOM
+character). The character content must be UCS-2.
 
 Strings ends are determined by the first of the following items found:
 
@@ -44,11 +45,13 @@ Strings ends are determined by the first of the following items found:
 
 Comments may appear anywhere within the string file.
 
-All the files must begin with a Unicode BOM character.
+All UTF-16LE files must begin with a Unicode BOM character.
+All UTF-8 files must not begin with a Unicode BOM character.
 
 **********
 **NOTE:** Please make sure you select an editor that supports UCS-2 characters
-that can be stored in a UTF-16LE file.
+that can be stored in either a UTF-8 (without a BOM character) or a UTF-16LE
+file (with a BOM character).
 **********
 
 ## 2.1 Common EBNF
