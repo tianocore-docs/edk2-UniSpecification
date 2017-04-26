@@ -77,16 +77,17 @@ Copyright (c) 2016-2017, Intel Corporation. All rights reserved.
 
 ### Revision History
 
-| Revision          | Description                                                                              | Date            |
-| ----------------- | ---------------------------------------------------------------------------------------- | --------------- |
-| 1.0               | Initial Release.                                                                         | February 2014   |
-| 1.1               | Updated EBNF to follow syntax specified in EBNF by the ANTLR project.                    | August 2014     |
-|                   | Added content related to EDK II Meta-Data Unicode files.                                 |                 |
-|                   | Restructured document.                                                                   |                 |
-|                   | Removed security and C format GUID definitions, not required for HII or other UNI files. |                 |
-|                   | Removed invalid escape code sequences.                                                   |                 |
-| 1.2               | Added optional font formatting                                                           | September 2014  |
-| 1.2 Errata A      | Correct misspelling of: `STR_PROPERTIES_MODULE_NAME`                                     | April 2015      |
-| 1.3               | Added: Syntax for non-ascii characters inside quoted strings.                            | March 2016      |
-|                   | Removed: Info on specific consumers (.INF & .DEC) removed.                               |                 |
-| 1.4               | Convert to GitBook format                                                                | March 2017      |
+| Revision          | Description                                                                                               | Date            |
+| ----------------- | --------------------------------------------------------------------------------------------------------- | --------------- |
+| 1.0               | Initial Release.                                                                                          | February 2014   |
+| 1.1               | Updated EBNF to follow syntax specified in EBNF by the ANTLR project.                                     | August 2014     |
+|                   | Added content related to EDK II Meta-Data Unicode files.                                                  |                 |
+|                   | Restructured document.                                                                                    |                 |
+|                   | Removed security and C format GUID definitions, not required for HII or other UNI files.                  |                 |
+|                   | Removed invalid escape code sequences.                                                                    |                 |
+| 1.2               | Added optional font formatting                                                                            | September 2014  |
+| 1.2 Errata A      | Correct misspelling of: `STR_PROPERTIES_MODULE_NAME`                                                      | April 2015      |
+| 1.3               | Added: Syntax for non-ascii characters inside quoted strings.                                             | March 2016      |
+|                   | Removed: Info on specific consumers (.INF & .DEC) removed.                                                |                 |
+| 1.4               | Convert to GitBook format                                                                                 | April 2017      |
+|                   | [#506](https://bugzilla.tianocore.org/show_bug.cgi?id=506) UNI Spec: Clean up Related Information section |                 |

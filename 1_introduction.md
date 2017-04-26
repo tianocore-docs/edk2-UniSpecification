@@ -40,35 +40,16 @@ allows strings to be grouped either by language or by string identifier.
 The following publications and sources of information may be useful to you or
 are referred to by this specification:
 
-* _Extensible Firmware Interface Specification_, Version 1.10, Intel, 2001,
-  http://developer.intel.com/technology/efi.
+* _Unified Extensible Firmware Interface Specification_, http://www.uefi.org.
 
-* _Unified Extensible Firmware Interface Specification_, Version 2.0, Unified
-  EFI, Inc., 2006, http://www.uefi.org.
-
-* _Unified Extensible Firmware Interface Specification_, Version 2.1, Unified
-  EFI, Inc., 2007, http://www.uefi.org.
-
-* _Intel(R) Platform Innovation Framework for EFI Specifications_, Intel, 2006,
-  http://www.intel.com/technology/framework.
-
-* _EDK II Module Development Environment Package Specification_, Version 0.51,
-  Intel, 2006, https://edk2.tianocore.org/source/browse/edk2/trunk/docs
-
-* _EDK II Build and Packaging Architecture Specification_, Version 0.53, Intel,
-  2006, https://edk2.tianocore.org/source/browse/edk2/trunk/docs.
-
-* _EDK II Module Surface Area Specification_, Version 0.51, Intel, 2006,
-  https://edk2.tianocore.org/source/browse/edk2/trunk/docs
-
-* _EDK II Module Development Environment Library Specification_, Version 0.58,
-  Intel, 2006, https://edk2.tianocore.org/servlets/ProjectDocumentList?folderID=82&H expandFolder=82&folderID=0.H
-
-* _EDK II Platform Configuration Database Infrastructure Description_,
-  Version 0.54, Intel, 2006, https://edk2.tianocore.org/source/browse/edk2/trunk/docs
-
-* _EDK II C Coding Standards Specification_, Version 0.51, Intel, 2006,
-  https://edk2.tianocore.org/source/browse/edk2/trunk/docs
+* http://www.tianocore.org/docs/EDK_II_Documents.html
+  - _EDK II Build Specification,_ Intel, 2016.
+  - _EDK II DEC File Specification_, Intel, 2016.
+  - _EDK II INF File Specification_, Intel, 2016.
+  - _EDK II DSC File Specification_, Intel, 2016.
+  - _EDK II FDF File Specification_, Intel, 2016.
+  - _EDK II Expression Syntax Specification_, Intel, 2015.
+  - _EDK II C Coding Standards Specification_, Intel, 2015.
 
 ## 1.2 Terms
 
