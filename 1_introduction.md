@@ -40,7 +40,7 @@ allows strings to be grouped either by language or by string identifier.
 The following publications and sources of information may be useful to you or
 are referred to by this specification:
 
-* _Unified Extensible Firmware Interface Specification_, http://www.uefi.org.
+* _Unified Extensible Firmware Interface Specifications_, http://uefi.org/specifications.
 
 * http://www.tianocore.org/docs/EDK_II_Documents.html
   - _EDK II Build Specification,_ Intel, 2016.
