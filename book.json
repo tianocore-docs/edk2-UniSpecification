@@ -4,7 +4,6 @@
     "title"   : "EDK II Multi-String .UNI File Format Specification",
     "version" : "Revision 1.4"
   },
-
-  "plugins": ["puml"],
+  "plugins": ["puml-aleung"],
   "pluginsConfig": {}
 }
