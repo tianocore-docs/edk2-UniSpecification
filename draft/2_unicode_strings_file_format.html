@@ -1,0 +1,571 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2 Unicode Strings File Format · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2_unicode_strings_file_format.html" />
+    
+    
+    <link rel="prev" href="1_introduction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    EDK II Multi-String .UNI File Format Specification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1_introduction.html">
+            
+                <a href="1_introduction.html#1-introduction">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1_introduction.html">
+            
+                <a href="1_introduction.html#11-related-information">
+            
+                    
+                    1.1 Related Information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="1_introduction.html">
+            
+                <a href="1_introduction.html#12-terms">
+            
+                    
+                    1.2 Terms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="1_introduction.html">
+            
+                <a href="1_introduction.html#13-conventions-used-in-this-document">
+            
+                    
+                    1.3 Conventions used in this document
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2_unicode_strings_file_format.html">
+            
+                <a href="2_unicode_strings_file_format.html#2-unicode-strings-file-format">
+            
+                    
+                    2 Unicode Strings File Format
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="2_unicode_strings_file_format.html">
+            
+                <a href="2_unicode_strings_file_format.html#21-common-ebnf">
+            
+                    
+                    2.1 Common EBNF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3_hii_string_packs.html">
+            
+                <a href="3_hii_string_packs.html#3-hii-string-packs">
+            
+                    
+                    3 HII String Packs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3_hii_string_packs.html">
+            
+                <a href="3_hii_string_packs.html#31-example-file">
+            
+                    
+                    3.1 Example file
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4_redacted.html">
+            
+                <a href="4_redacted.html#4-redacted">
+            
+                    
+                    4 Redacted
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5_font_support.html">
+            
+                <a href="5_font_support.html#5-font-support">
+            
+                    
+                    5 Font Support
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="5_font_support.html">
+            
+                <a href="5_font_support.html#51-font">
+            
+                    
+                    5.1 #font
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="5_font_support.html">
+            
+                <a href="5_font_support.html#52-fontdef">
+            
+                    
+                    5.2 #fontdef
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="5_font_support.html">
+            
+                <a href="5_font_support.html#53-string-extensions">
+            
+                    
+                    5.3 #string Extensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Tables
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="5_font_support.html">
+            
+                <a href="5_font_support.html#table-1-uni-file-font-escape-characters">
+            
+                    
+                    Table 1 .uni File Font Escape Characters
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >2 Unicode Strings File Format</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Multi-String .UNI File Format Specification</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 05:50:18]</div>
+        <div style="text-align:right">Revision 1.4</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+  2 Unicode Strings File Format
+
+  Copyright (c) 2016-2017, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h1 id="2-unicode-strings-file-format">2 Unicode Strings File Format</h1>
+<p>EDK II Unicode files are used for mapping token names to localized strings that
+are identified by an RFC4646 language code. The format for storing EDK II
+Unicode files on disk is UTF-8 (without a BOM character) or UTF-16LE (with a BOM
+character). The character content must be UCS-2.</p>
+<p>Strings ends are determined by the first of the following items found:</p>
+<ul>
+<li>a control character</li>
+<li>a comment</li>
+<li>the end of the file</li>
+<li>a blank line</li>
+</ul>
+<p>Comments may appear anywhere within the string file.</p>
+<p>All UTF-16LE files must begin with a Unicode BOM character.
+All UTF-8 files must not begin with a Unicode BOM character.</p>
+<hr>
+<p><strong>NOTE:</strong> Please make sure you select an editor that supports UCS-2 characters
+that can be stored in either a UTF-8 (without a BOM character) or a UTF-16LE
+file (with a BOM character).</p>
+<hr>
+<h2 id="21-common-ebnf">2.1 Common EBNF</h2>
+<p>The following EBNF uses quoted (double quotes) encapsulated characters to
+represent UCS-2 string literals. In the following definitions, the semi-colon
+is used to denote a comment.</p>
+<pre><code class="lang-c">&lt;US&gt;           ::= &quot; &quot;
+&lt;Letter&gt;       ::= {(\u0041-\u005A)} ; Characters A - Z
+                   {(\u0061-\u007A)} ; Characters a - z
+&lt;Digit&gt;        ::= (\u0030-\u0039)   ; Characters 0 - 9
+&lt;MS&gt;           ::= &lt;US&gt;+
+&lt;ME&gt;           ::= {&lt;MS&gt;} {&lt;EOL&gt;}
+&lt;CommentLine&gt;  ::= &quot;//&quot; &lt;US&gt;* &lt;PCHars&gt; &lt;EOL&gt;
+&lt;BlankLine&gt;    ::= &lt;EOL&gt;
+&lt;Chars&gt;        ::= (\u0001-\uF6FF)
+&lt;PChars&gt;       ::= {(\u0020-\uF6FF)} {&lt;OpChar&gt;}
+&lt;OpChars&gt;      ::= &quot;\x&quot; [{&lt;Letter&gt;} {&lt;Digit&gt;}]{4} &quot;\&quot;
+&lt;VChars&gt;       ::= (\u0021-\uF6FF)
+&lt;UnicodeLines&gt; ::= &lt;Token&gt; &lt;ME&gt;
+                   [&lt;Ldef&gt; [&lt;String&gt; &lt;ME&gt;]+]+
+&lt;Ldef&gt;         ::= &lt;CtrlChar&gt; &quot;language&quot; &lt;MS&gt; &lt;LangCode&gt; &lt;ME&gt;
+&lt;HexDigit&gt;     ::= {&lt;Digit&gt;}
+                   {(\u0041-\u0046)} ; Characters A - F
+                   {(\u0061-\u0066)} ; Characters a - f
+&lt;CtrlChar&gt;     ::= &lt;US&gt;* &quot;#&quot;
+&lt;Token&gt;        ::= &lt;CtrlChar&gt; &quot;string&quot; &lt;MS&gt; &lt;Identifier&gt;
+&lt;Identifier&gt;   ::= &lt;Letter&gt; [{&lt;Letter&gt;} {&lt;Digit&gt;} {&lt;UN&gt;}]*
+&lt;LangCode&gt;     ::= &lt;RFC4646&gt;
+&lt;RFC4646&gt;      ::= &lt;Letter&gt;{2,8} [&lt;ShortExt&gt; &lt;LongExt&gt;*]
+&lt;ShortExt&gt;     ::= &quot;-&quot; [{&lt;Letter&gt;} {&lt;Digit&gt;}]{1,8}
+&lt;LongExt&gt;      ::= &quot;-&quot; [{&lt;Letter&gt;} {&lt;Digit&gt;}]{1,}
+&lt;UDblQuote&gt;    ::= \u0022  ; Double Quote Character, &quot;
+&lt;String&gt;       ::= &lt;UDblQuote&gt; &lt;SContent&gt;* &lt;UDblQuote&gt;
+&lt;SContent&gt;     ::= {&lt;PChars&gt;} {&lt;Attributes&gt;}
+&lt;Attributes&gt;   ::= &quot;\&quot; {&quot;narrow&quot;} {&quot;wide&quot;} {&lt;UDblQuote&gt;}
+                   {&quot;n&quot;} {&quot;r&quot;} {&quot;t&quot;} {&quot;nbr&quot;} {&quot;\&quot;} {&quot;&apos;&quot;}
+</code></pre>
+<h3 id="211-definitions">2.1.1 Definitions</h3>
+<p><strong><em>LanguageCodes</em></strong></p>
+<p>The language code must be a valid RFC4646 language code.</p>
+<p><strong><em>EscChar</em></strong></p>
+<p>In order to include some standard characters, such as the &quot;\&quot; back-slash
+character within a string, the character must be prefixed with the escape
+character.  Characters that may require a prefixed escape character include
+the following, back slash &quot;\&quot; character, single-quote &quot;&apos;&quot; character,
+double-quote &apos;&quot;&apos; character and the forward slash &quot;/&quot; character. The back slash
+always requires the escape character.</p>
+<p><strong><em>Token</em></strong></p>
+<p>The token (strong identifier) may only contain numbers, upper and lower case
+letters, underscore character, and dash character.</p>
+<p><strong><em>Include</em></strong></p>
+<p>An include line is used to parse another file, also compliant with this
+specification, as if it was in the file. The tokens should not overlap between
+the file for the same language.</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">EDK II Multi-String .UNI File Format Specification</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 05:50:18]</div>
+        <div style="text-align:right">Revision 1.4</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="1_introduction.html#13-conventions-used-in-this-document" class="navigation navigation-prev " aria-label="Previous page: 1.3 Conventions used in this document">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2_unicode_strings_file_format.html#21-common-ebnf" class="navigation navigation-next " aria-label="Next page: 2.1 Common EBNF">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2 Unicode Strings File Format","level":"1.3","depth":1,"next":{"title":"2.1 Common EBNF","level":"1.3.1","depth":2,"anchor":"#21-common-ebnf","path":"2_unicode_strings_file_format.md","ref":"2_unicode_strings_file_format.md#21-common-ebnf","articles":[]},"previous":{"title":"1.3 Conventions used in this document","level":"1.2.3","depth":2,"anchor":"#13-conventions-used-in-this-document","path":"1_introduction.md","ref":"1_introduction.md#13-conventions-used-in-this-document","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"draft":"yes","title":"EDK II Multi-String .UNI File Format Specification","version":"Revision 1.4"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2_unicode_strings_file_format.md","mtime":"2020-12-01T05:49:45.975Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T05:50:18.981Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
